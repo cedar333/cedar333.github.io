@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CMD Markdown编译器使用方法
-category : 工具
+category : Blod_Course
 tags : [Markdown]
 stickie: true
 ---
