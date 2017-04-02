@@ -26,8 +26,6 @@ copyright:
 google_api_key:
 
 # Build settings
-paginate:7
-paginate_path: "page:num"
 gems: [jekyll-paginate]
 
 markdown: kramdown
