@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="page-header" id="archives">
-                            <h3>文章的整合</h3>
+                            <h3 class="text-danger">文章的整合</h3>
                         </div>
 
 
@@ -50,25 +50,6 @@
                                     <div class="d-flex align-items-center post-title">
                                      <a class="post-link text-danger h6 text-danger" href="{{site.url}}{{site.baseurl}}{{ post.url}}">{{ post.title }}</a>
                                     </div>
-                                </div>
-                            </li>
-                            {% endfor %}
-
-
-                            {% comment %} Normal post list {% endcomment %}
-                            {% for post in site.posts %}
-
-                            {% comment %} If it already showed in stickie list {% endcomment %}
-                            {% if post.stickie == true %}
-                            {% continue %}
-                            {% endif %}
-
-                            <li class="ant-timeline-item">
-                                <div class="ant-timeline-item-content">
-                                    <span class="text-primary">{{ post.date | date: "%Y-%m-%d" }} </span>
-                                    <div class="d-flex align-items-center post-title">
-                                        <a class="post-link h6 text-primary" href="{{site.url}}{{site.baseurl}}{{ post.url}}">{{ post.title }}</a>
-                                     </div>
                                 </div>
                             </li>
                             {% endfor %}
